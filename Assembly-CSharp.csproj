@@ -44,6 +44,8 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Assets from store\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
+     <Compile Include="Assets\Scripts\destroyOutOfBounds.cs" />
+     <Compile Include="Assets\Scripts\moveLeft.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Assets from store\Sc-Fi Music" />
      <Folder Include="Assets\Scenes" />

@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 9082288373278504437, guid: c147f055b93b7174c8694fbb70fe78bc, type: 3}
   - {fileID: 5304945810540262968, guid: 1f2601e71c1436b45b70ef0a6e521cfa, type: 3}
   - {fileID: 2981004635893103574, guid: 50366f687f0393e4f8ae434fe3d3bd92, type: 3}
-  spawnDelay: 5
+  spawnDelay: 2
 --- !u!4 &419564696
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +403,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &790220875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 790220876}
+  - component: {fileID: 790220877}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &790220876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790220875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.34318948, y: -0.010396974, z: -717.63727}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790220877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790220875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cfe4d96cdd23f458309ee088183c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnManager: {fileID: 419564694}
+  isGameActive: 0
 --- !u!1 &1420137589
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,24 +550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb16f4dddf2c2a041a56162fbe740039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 790220877}
   player: {fileID: 1561313677}
   speed: 10
---- !u!58 &1564220815
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561313677}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00081352144, y: 0.0078976005}
-  serializedVersion: 2
-  m_Radius: 0.21961449
 --- !u!1001 &2981004636514466395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,4 +618,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -8967252144814394737, guid: 50366f687f0393e4f8ae434fe3d3bd92, type: 3}
+    - {fileID: 7102717009172264321, guid: 50366f687f0393e4f8ae434fe3d3bd92, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50366f687f0393e4f8ae434fe3d3bd92, type: 3}

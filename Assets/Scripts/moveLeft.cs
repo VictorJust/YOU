@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moveLeft : MonoBehaviour
+public class MoveLeft : MonoBehaviour
 {
     [SerializeField] private float speed = 0.1f;
     void Update()

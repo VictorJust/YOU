@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> obstacles;
-    [SerializeField] private int spawnDelay = 3;
+    [SerializeField] private int spawnDelay = 2;
     private float xPosition;
     private float yPosition;
     private float yRange = 5;

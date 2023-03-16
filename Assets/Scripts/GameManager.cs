@@ -5,12 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject spawnManager;
-    
+
     public bool isGameActive;
+    private bool isSoundActive;
 
     private void Start()
     {
         isGameActive = true;
+        isSoundActive = true;
     }
 
     private void Update()
@@ -24,5 +26,19 @@ public class GameManager : MonoBehaviour
     private void GameOver()
     {
         spawnManager.SetActive(false);
+    }
+
+    public void soundSwitch()
+    {
+        if (isSoundActive == true)
+        {
+            GameObject.FindObjectOfType<AudioSource>().Pause();
+            isSoundActive = false;
+        }
+        else
+        {
+            GameObject.FindObjectOfType<AudioSource>().Play();
+            isSoundActive = true;
+        }
     }
 }

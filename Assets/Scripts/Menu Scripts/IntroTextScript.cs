@@ -1,5 +1,6 @@
 // Script for having a typewriter effect for UI
 // Prepared by Nick Hwang (https://www.youtube.com/nickhwang)
+// Yes, I willingly saved the text above 
 
 using System.Collections;
 using UnityEngine;

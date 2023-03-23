@@ -217,6 +217,7 @@ RectTransform:
   m_Children:
   - {fileID: 2056280437}
   - {fileID: 1014537221}
+  - {fileID: 735726424}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -260,7 +261,7 @@ MonoBehaviour:
   - {fileID: 9082288373278504437, guid: c147f055b93b7174c8694fbb70fe78bc, type: 3}
   - {fileID: 5304945810540262968, guid: 1f2601e71c1436b45b70ef0a6e521cfa, type: 3}
   - {fileID: 2981004635893103574, guid: 50366f687f0393e4f8ae434fe3d3bd92, type: 3}
-  spawnDelay: 2
+  spawnDelay: 1
 --- !u!4 &419564696
 Transform:
   m_ObjectHideFlags: 0
@@ -505,6 +506,100 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &735726421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735726424}
+  - component: {fileID: 735726423}
+  - component: {fileID: 735726422}
+  - component: {fileID: 735726425}
+  m_Layer: 5
+  m_Name: Ending Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &735726422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735726421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &735726423
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735726421}
+  m_CullTransparentMesh: 1
+--- !u!224 &735726424
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735726421}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 37209781}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: 0}
+  m_SizeDelta: {x: 500, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &735726425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735726421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993212845ec712c4abe7f4042bd9d0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingText: {fileID: 735726422}
 --- !u!1 &790220875
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +646,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnManager: {fileID: 419564694}
+  endingText: {fileID: 735726422}
+  planets:
+  - {fileID: 3379066563091722217, guid: abad8b6596ce1b74896bd9267c282ef8, type: 3}
+  - {fileID: 3242594626417205819, guid: 5bdf61c1347e6c2459706bd32ab13ee8, type: 3}
+  - {fileID: 1136105727647949619, guid: 45a5dabb7a640a4449ba3c11e1e91998, type: 3}
+  - {fileID: 3078926486563417959, guid: 5e15412bf68ec654fbac25202b98c072, type: 3}
+  - {fileID: 8982627113095233783, guid: 5198b9599c09b25408f53ac29e627f29, type: 3}
   isGameActive: 0
 --- !u!1 &1011784776
 GameObject:
@@ -1070,7 +1172,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 790220877}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: soundSwitch
+        m_MethodName: SoundSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

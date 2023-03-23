@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    
     [SerializeField] private GameObject player;
+    
     // Set player's movement
     [SerializeField] private float speed = 10;
     private float verticalInput;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(player);
         gameManager.isGameActive = false;
+        Destroy(player);
     }
 }

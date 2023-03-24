@@ -2,6 +2,7 @@
 // Prepared by Nick Hwang (https://www.youtube.com/nickhwang)
 // Yes, I willingly saved the text above 
 
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -84,6 +85,14 @@ public class IntroTextScript : MonoBehaviour
 		if (leadingChar != "")
 		{
 			tmpProText.text = tmpProText.text.Substring(0, tmpProText.text.Length - leadingChar.Length);
+		}
+	}
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Mouse0))
+		{
+			timeBtwChars = 0.0001f;
 		}
 	}
 }
